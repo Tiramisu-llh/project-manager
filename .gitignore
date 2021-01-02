@@ -1,0 +1,22 @@
+project-manager-api/HELP.md
+project-manager-api/target/
+!project-manager-api/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### IntelliJ IDEA ###
+**/.idea
+project-manager-api/*.iws
+project-manager-api/*.iml
+project-manager-api/*.ipr
+
+### VS Code ###
+**/.vscode/
+
+# ----------app----------
+project-manager-app/.DS_Store
+project-manager-app/node_modules/
+project-manager-app/dist/
+project-manager-app/npm-debug.log*
+project-manager-app/yarn-debug.log*
+project-manager-app/yarn-error.log*
