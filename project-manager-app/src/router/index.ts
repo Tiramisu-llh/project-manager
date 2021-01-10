@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   { 
-    path: '/home', name: 'Home', component: () => import('../views/home/index.vue'),
+    path: '/index', name: 'Home', component: () => import('../views/home/index.vue'),
     children: [
       { path: 'example', name: 'Example', component: () => import('../views/home/Example.vue') },
       { path: 'test', name: 'Example', component: () => import('../views/test/test.vue') },
@@ -19,10 +19,12 @@ const routes: Array<RouteConfig> = [
   { path: '/navbar', name: 'navbar', component: () => import('../views/test/navbar.vue') },
   { path: '/get', name: 'get', component: () => import('../views/test/Get.vue') },
   { path: '/post', name: 'get', component: () => import('../views/test/Post.vue') },
+  { path: '/home', name: 'get', component: () => import('../views/home/Home.vue') },
   
     // { path: '/test1', name: 'test1', component: () => import('../views/article/test1.vue') },
   // { path: '/navbar1', name: 'navbar1', component: () => import('../views/home/navbar1.vue') },
-  { path: '/login', name: 'login', component: () => import('../views/user/login.vue') },
+  { path: '/login', name: 'login', component: () => import('../views/user/Login.vue') },
+  { path: '/register', name: 'login', component: () => import('../views/user/Register.vue') },
   // { path: '/page', name: 'page', component: () => import('../views/home/page.vue') },
   // { path: '/float', name: 'float', component: () => import('../views/home/float.vue') },
 ]
